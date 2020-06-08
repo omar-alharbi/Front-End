@@ -1,0 +1,131 @@
+<div class="page-wrapper bg-gra-02 p-t-130 p-b-100 font-poppins">
+  <div class="wrapper wrapper--w680">
+    <div class="card card-4">
+      <div class="card-body">
+        <h2 class="title">Registration Form</h2>
+        <form class="form-signup" [formGroup]="registerForm" 
+        (ngSubmit) = "onSubmit()"
+        >
+
+        <div class="row row-space">
+          <div class="col-2">
+            <div class="input-group">
+              <input
+                class="input--style-4"
+                type="text"
+                id="username"
+                placeholder="Username"
+                required=""
+                [formControlName]="'userName'"
+              />
+            </div>
+          </div>
+        </div>
+
+
+          <div class="row row-space">
+            <div class="col-2">
+              <div class="input-group">
+                <input
+                  class="input--style-4"
+                  type="text"
+                  id="fullName"
+                  placeholder="Full Name"
+                  required=""
+                  [formControlName]="'fullName'"
+                />
+              </div>
+            </div>
+          </div>
+
+            <div class="row row-space">
+              <div class="col-2">
+                <div class="input-group">
+                  <input
+                    class="input--style-4"
+                    type="number"
+                    id="nationalID"
+                    placeholder="NationalId"
+                    required=""
+                    [formControlName]="'nationalID'"
+
+                  />
+                </div>
+              </div>
+            </div>
+
+          <div class="row row-space">
+            <div class="col-2">
+              <div class="input-group">
+                <input
+                  class="input--style-4"
+                  type="number"
+                  id="dob"
+                  placeholder="Year Of Brith "
+                  required=""
+                  [formControlName]="'dob'"
+
+
+                />
+              </div>
+            </div>
+          </div>
+
+            <div class="row row-space">
+              <div class="col-2">
+                <div class="input-group">
+                  <input
+                    class="input--style-4"
+                    type="number"
+                    id="phoneNumber"
+                    placeholder="Phone Number"
+                    required=""
+                    [formControlName]="'phoneNumber'"
+
+                  />
+                </div>
+              </div>
+            </div>
+
+          <div class="row row-space">
+            <div class="col-2">
+              <div class="input-group">
+                <input
+                  class="input--style-4"
+                  type="email"
+                  id="email"
+                  placeholder="Email"
+                  required=""
+                  [formControlName]="'email'"
+
+                />
+              </div>
+            </div>
+          </div>
+          <div class="row row-space">
+            <div class="col-2">
+              <div class="input-group">
+                <input
+                  class="input--style-4"
+                  type="password"
+                  id="password"
+                  placeholder="Password"
+                  required=""
+                  [formControlName]="'password'"
+
+                />
+              </div>
+            </div>
+          </div>
+          <div style="text-align: center;">
+            <div class="p-t-15">
+              <button class="button"  style="vertical-align: middle;" type="submit">
+                Signup
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,25 @@
+<div class="page-wrapper bg-gra-02 p-t-130 p-b-100 font-poppins">
+  <div class="wrapper wrapper--w680">
+    <div class="card card-4">
+      <div class="card-body">
+
+
+
+<form class="form-signin" [formGroup]="loginForm" (ngSubmit)="onSubmit()" novalidate>
+    <h1 class="h3 mb-3 font-weight-normal">Please Sign in</h1>
+    <div class="form-group">
+      <label for="inputUsername" class="sr-only">Username</label>
+      <input type="text" id="inputUsername" [formControlName]="'username'" class="form-control" placeholder="Username" required="" autofocus="">
+    </div>
+    <br>
+    <div class="form-group">
+      <label for="inputPassword" class="sr-only">Password</label>
+      <input type="password" id="inputPassword" [formControlName]="'password'" class="form-control" placeholder="Password" required="">
+    </div>
+    <br>
+    <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+  </form>
+</div>
+</div>
+</div>
+</div>

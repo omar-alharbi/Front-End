@@ -1,0 +1,25 @@
+<div class="header">
+  <a routerLink="/" class="logo">Wattheq</a>
+  <div class="header-right">
+
+    <a routerLink="/about"routerLinkActive="active">About</a>
+
+    <div *ngIf="!authService.isAuthenticated()" >
+    <a routerLink="/reg"routerLinkActive="active">Register</a>
+    <a routerLink="/login"routerLinkActive="active">Login</a>
+    </div>
+
+    <div *ngIf="authService.isAuthenticated()" >
+    <a routerLink="/home-user"routerLinkActive="active">My Homepage</a>
+    <a (click)="logout()" >Logout</a>
+    </div>
+
+  </div>
+</div>
+
+
+<router-outlet></router-outlet>
+
+
+
+
